@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_ALFCONTACT_ALFCONTACT_VIEW_DEFAULT_TITLE">
+        <message>COM_ALFCONTACT_ALFCONTACT_VIEW_DEFAULT_DESC</message>
+    </layout>
+
+	<fields name="params">
+		<fieldset name="basic" label="COM_MENUS_BASIC_FIELDSET_LABEL"
+				  addfieldprefix="Joomla\Component\ALFContact\Administrator\Field">
+			<field
+				name="title"
+				type="text"
+				label="COM_ALFCONTACT_OPTIONS_TITLE"
+				description="COM_ALFCONTACT_OPTIONS_TITLE_DESC"
+				default="">
+			</field>
+			<field
+				name="defcontact"
+				type="contactlist"
+				label="COM_ALFCONTACT_DEFAULT_CONTACT"
+				description="COM_ALFCONTACT_DEFAULT_CONTACT_DESC">
+			</field>
+			<field
+				type="editor"
+				name="header"
+				label="COM_ALFCONTACT_OPTIONS_HEADER"
+				filter="safehtml"
+				description="COM_ALFCONTACT_OPTIONS_HEADER_DESC"
+				default="">
+			</field>
+			<field
+				type="editor"
+				name="footer"
+				label="COM_ALFCONTACT_OPTIONS_FOOTER"
+				filter="safehtml"
+				description="COM_ALFCONTACT_OPTIONS_FOOTER_DESC"
+				default="">
+			</field>
+			<field
+				name="gpdr_info"
+				type="textarea"
+				label="COM_ALFCONTACT_OPTIONS_GPDR_INFO"
+				description="COM_ALFCONTACT_OPTIONS_GPDR_INFO_DESC"
+				cols="100"
+				rows="5"
+				filter="safehtml"
+			>
+			</field>
+			<field
+				name="gpdr_label"
+				type="text"
+				label="COM_ALFCONTACT_OPTIONS_GPDR_LABEL"
+				description="COM_ALFCONTACT_OPTIONS_GPDR_LABEL_DESC"
+				cols="100"
+				rows="3"
+				filter="safehtml"
+			>
+			</field>
+		</fieldset>
+	</fields>
+</metadata>

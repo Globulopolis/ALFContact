@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<changelogs>
+	<changelog>
+		<element>alfcontact</element>
+		<type>component</type>
+		<version>5.0.0</version>
+		<change>
+			<item>Support for Joomla 5</item>
+			<item>Response view is not available by direct access.</item>
+			<item>You can disable the captcha for the component or select another one.</item>
+			<item>Captcha can be disabled or enabled for different user groups.</item>
+		</change>
+		<fix>
+			<item>Other fixes</item>
+		</fix>
+		<addition>
+			<item>New redirect type Article.</item>
+		</addition>
+	</changelog>
+</changelogs>

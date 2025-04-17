@@ -1,0 +1,11 @@
+ALTER TABLE `#__alfcontact` CHARSET=utf8mb4, COLLATE=utf8mb4_unicode_ci;
+ALTER TABLE `#__alfcontact` CHANGE `name` `name` VARCHAR(255) CHARSET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL;
+ALTER TABLE `#__alfcontact` CHANGE `email` `email` VARCHAR(255) CHARSET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL;
+ALTER TABLE `#__alfcontact` CHANGE `bcc` `bcc` VARCHAR(255) CHARSET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL;
+ALTER TABLE `#__alfcontact` CHANGE `prefix` `prefix` VARCHAR(255) CHARSET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL;
+ALTER TABLE `#__alfcontact` CHANGE `extra` `extra` TEXT CHARSET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL;
+ALTER TABLE `#__alfcontact` CHANGE `defsubject` `defsubject` VARCHAR(255) CHARSET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL;
+ALTER TABLE `#__alfcontact` CHANGE `ordering` `ordering` INT(11) DEFAULT 0 NOT NULL;
+ALTER TABLE `#__alfcontact` CHANGE `access` `access` INT UNSIGNED DEFAULT 0 NOT NULL;
+ALTER TABLE `#__alfcontact` CHANGE `language` `language` CHAR(7) CHARSET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '' NOT NULL;
+ALTER TABLE `#__alfcontact` CHANGE `published` `published` INT DEFAULT 0 NOT NULL;

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" method="upgrade">
+	<name>com_alfcontact</name>
+	<creationDate>April 2025</creationDate>
+	<author>Alfred Vink</author>
+	<authorEmail>alfred@alfsoft.com</authorEmail>
+	<authorUrl>https://www.alfsoft.com</authorUrl>
+	<copyright>Copyright © 2018 - All rights reserved.</copyright>
+	<license>GNU/GPL</license>
+	<version>5.0.0</version>
+	<namespace path="src">Joomla\Component\ALFContact</namespace>
+
+	<scriptfile>script.php</scriptfile>
+
+	<install> <!-- Runs on install -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall> <!-- Runs on uninstall -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	<update> <!-- Runs on update -->
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+
+	<!-- Site Main File Copy Section -->
+	<!-- Note the folder attribute: This attribute describes the folder
+			to copy FROM in the package to install therefore files copied
+			in this section are copied from /site/ in the package -->
+	<files folder="site">
+		<folder>forms</folder>
+		<folder>language</folder>
+		<folder>src</folder>
+		<folder>tmpl</folder>
+	</files>
+
+	<media destination="com_alfcontact" folder="media">
+		<folder>js</folder>
+	</media>
+
+	<languages folder="site">
+		<language tag="en-GB">language/en-GB/com_alfcontact.ini</language>
+		<language tag="ru-RU">language/ru-RU/com_alfcontact.ini</language>
+	</languages>
+
+	<administration>
+		<menu img="class:address-book">COM_ALFCONTACT_MENU</menu>
+		<!-- Administration Main File Copy Section -->
+		<!-- Note the folder attribute: This attribute describes the folder
+				to copy FROM in the package to install therefore files copied
+				in this section are copied from /admin/ in the package -->
+		<files folder="admin">
+			<!-- Admin Main File Copy Section -->
+			<filename>config.xml</filename>
+			<filename>access.xml</filename>
+
+			<folder>forms</folder>
+			<folder>services</folder>
+			<folder>sql</folder>
+			<folder>src</folder>
+			<folder>tmpl</folder>
+		</files>
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB/com_alfcontact.ini</language>
+			<language tag="en-GB">language/en-GB/com_alfcontact.sys.ini</language>
+			<language tag="ru-RU">language/ru-RU/com_alfcontact.ini</language>
+			<language tag="ru-RU">language/ru-RU/com_alfcontact.sys.ini</language>
+		</languages>
+	</administration>
+
+	<changelogurl>https://raw.githubusercontent.com/Globulopolis/ALFContact/master/updates/changelog.xml</changelogurl>
+
+	<!-- UPDATESERVER DEFINITION -->
+	<updateservers>
+		<server type="extension" priority="1" name="ALFContact Updates">
+			<![CDATA[https://raw.githubusercontent.com/Globulopolis/ALFContact/master/updates/com_alfcontact.xml]]>
+		</server>
+	</updateservers>
+</extension>
