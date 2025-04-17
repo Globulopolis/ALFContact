@@ -73,12 +73,12 @@
 		</languages>
 	</administration>
 
-	<changelogurl>https://raw.githubusercontent.com/Globulopolis/ALFContact/master/updates/changelog.xml</changelogurl>
+	<changelogurl>https://raw.githubusercontent.com/Globulopolis/ALFContact/refs/heads/main/updates/changelog.xml</changelogurl>
 
 	<!-- UPDATESERVER DEFINITION -->
 	<updateservers>
 		<server type="extension" priority="1" name="ALFContact Updates">
-			<![CDATA[https://raw.githubusercontent.com/Globulopolis/ALFContact/master/updates/com_alfcontact.xml]]>
+			<![CDATA[https://raw.githubusercontent.com/Globulopolis/ALFContact/refs/heads/main/updates/com_alfcontact.xml]]>
 		</server>
 	</updateservers>
 </extension>
