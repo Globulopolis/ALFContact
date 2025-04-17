@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<updates>
+	<update>
+		<name>ALFContact</name>
+		<description>ALFContact is a small 'Contact Us' form for Joomla!</description>
+		<element>com_alfcontact</element>
+		<type>component</type>
+		<version>5.0.0</version>
+		<infourl title="JComments">https://github.com/Globulopolis/ALFContact</infourl>
+		<downloads>
+			<downloadurl type="full" format="zip">https://github.com/Globulopolis/ALFContact/releases/download/v5.0.0/com_alfcontact-5.0.0.zip</downloadurl>
+		</downloads>
+		<tags>
+			<tag>Stable</tag>
+		</tags>
+		<maintainer>Globulopolis</maintainer>
+		<maintainerurl>https://github.com/Globulopolis/ALFContact</maintainerurl>
+		<sha256>ca6d16fd4c581695c66b03b723ab60c5960114160ec669ad27f49dd8721dee2b</sha256>
+		<sha384>7662d9c9c45c7b2a14fe808fd94afc68ed6b54c36bf1683b2d33ea80c4abaab703053683cd723bb782a98f2ba0d281f1</sha384>
+		<sha512>058fcd9cdfebe335f9938582c3b297ff02ee4afd2ec1ebec1233e6b7f35f34abcaadaf77e390e2278acbdbded0693da4d10d50559c7ce05c619f081266ee7812</sha512>
+		<targetplatform name="joomla" version="5.[0123456789]|10"/>
+	</update>				
+</updates>
